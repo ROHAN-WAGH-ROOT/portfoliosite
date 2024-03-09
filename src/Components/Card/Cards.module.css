@@ -1,0 +1,145 @@
+.icon {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.CustomTag {
+  width: 100%;
+  height: 50px;
+  color: black;
+  display: flex;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.bodyOfCard {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #aaa;
+  background-color: bisque;
+  margin: 5px;
+  text-align: center;
+}
+
+.allCardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.cardContainer {
+  min-width: 300px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+}
+.hr {
+  color: #c11212;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.googleMapContainer {
+  display: flex;
+  right: 2px;
+  width: 100%;
+  position: absolute;
+}
+.mainOfFormAndMap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.locationContainer {
+  display: block;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .allCardContainer {
+    display: block;
+  }
+  .cardContainer {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+  }
+  .mainOfFormAndMap {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
+  .googleMapContainer {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .mainOfFormAndMap {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+  }
+  .googleMapContainer {
+    display: block;
+    width: 100%;
+    margin: 10px;
+  }
+}
+.loader {
+  width: 10px;
+  height: 10px;
+  margin: 40px;
+  border-radius: 50%;
+  background: #b51515;
+}
+
+.animation {
+  height: 100vh;
+  background-image: linear-gradient(
+    45deg,
+    #ff9a9e 0%,
+    #fad0c4 99%,
+    #fad0c4 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+.paperPlane {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}

@@ -1,0 +1,129 @@
+.active {
+  color: green;
+}
+.homeContainer {
+  /* padding: 20px; */
+  height: 60%;
+}
+.navBarStyle {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: end;
+}
+.linkContainer {
+  margin-left: 10px;
+  padding: 10px;
+}
+.mainLink {
+  letter-spacing: 0px;
+  z-index: 100;
+  color: #1a1818;
+  text-align: left;
+  text-transform: uppercase;
+  border: 0 solid #000;
+  font-family: "Dancing Script", cursive;
+  font-size: 8vw;
+  font-weight: 300;
+  line-height: 0.95em;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out,
+    font-size 0.3s ease-in-out;
+  display: block;
+  position: relative;
+}
+
+.Info {
+  position: absolute;
+  bottom: 40px;
+  display: grid;
+  min-width: 350px;
+  margin: 20px;
+  margin-top: 20px;
+}
+
+.homeContaintOfInfo {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.homeContaintOfDescription {
+  display: flex;
+  max-width: 80%;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.9em;
+  position: relative;
+}
+
+.githubLink {
+  padding: 3px 10px;
+  background-color: bisque;
+  text-decoration: none;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.icon {
+  width: 20px;
+  height: 30px;
+  padding: 0px 5px;
+}
+
+.image {
+  width: 60%;
+  height: 100px;
+}
+
+.containerOfNavAndImage {
+  display: flex;
+}
+
+.mainLink:hover {
+  font-style: italic;
+  border-bottom: 1px solid #aaa;
+  font-weight: 400;
+  text-decoration: none;
+  transform: translate(10px);
+  background-color: rgb(249, 173, 102);
+  width: fit-content;
+}
+.githubLink:hover {
+  font-style: italic;
+  text-decoration: none;
+  transform: translate(5px);
+  width: fit-content;
+}
+
+@media (max-width: 500px) {
+  .containerOfNavAndImage {
+    display: block;
+    margin-bottom: 50px;
+  }
+  .linkContainer {
+    padding: 5px;
+  }
+  .image {
+    display: flex;
+    height: 90%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    background-image: url("./images/success.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .navBarStyle {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}

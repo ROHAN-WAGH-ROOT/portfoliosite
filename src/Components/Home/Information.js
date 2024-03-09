@@ -18,7 +18,7 @@ export default function Information() {
           Front-End Developer and work with React, Node, MongoDB, etc.
         </div>
         <div className={styles.homeContaintOfDescription}>
-          Resently worked in Suvit fintech pvt ltd
+          {/* Resently worked in Suvit fintech pvt ltd */}
         </div>
         <div className={styles.homeContaintOfDescription}>
           <BsGithub

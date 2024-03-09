@@ -5,6 +5,7 @@ import SkillImg from "../../images/multi-tasking-ceo-handling-multiple-departmen
 import KudosImg from "../../images/concept-of-business-employees-team-working-in-business-environment-work-culture.svg";
 import { motion } from "framer-motion/dist/framer-motion";
 import { SteppedEase, gsap } from "gsap";
+import cvPdf from "../../images/RESUMED (1).pdf";
 
 export default function WorkingExperience() {
   const main = useRef();
@@ -62,6 +63,23 @@ export default function WorkingExperience() {
       // im.revert();
     }; // <- Cleanup!
   });
+  const downloadFile = () => {
+    fetch(cvPdf)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(new Blob([blob]));
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "CV.pdf"; // Specify the filename for the downloaded file
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+        document.body.removeChild(a);
+      })
+      .catch((error) => {
+        console.error("Error fetching the CV:", error);
+      });
+  };
   return (
     <div className={styles.workPage} ref={main}>
       <motion.div id="EXPPage" className={styles.wokingComponent}>
@@ -143,7 +161,12 @@ export default function WorkingExperience() {
             MongoDB / PLSQL / MYSQL
           </p>
           <div className={styles.buttonContainer}>
-            <button className={styles.buttonSlides}>My Cv</button>
+            <button
+              className={styles.buttonSlides}
+              onClick={() => downloadFile()}
+            >
+              My Cv
+            </button>
           </div>
         </motion.div>
         <motion.div
